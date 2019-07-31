@@ -6,5 +6,11 @@ module.exports = {
             .then(colors => {
                 res.json(colors)
             })
+    },
+    show: (req, res) => {
+        Color.findOne({ name: req.params.name })
+            .then(color => {
+                res.json(color)
+            })
     }
 }
