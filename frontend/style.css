@@ -1,7 +1,7 @@
 body {
+    margin: 0;
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
-    margin: 0;
 }
 
 header {
@@ -12,24 +12,27 @@ header {
 
 form {
     margin: 25px auto;
+}
+
+.input, .submit {
+    border: solid #000000 2px;
     outline: none;
 }
 
 .input {
     padding: 12px;
-    border: solid #000000 2px;
-    outline: none;
+}
 
-
+input[type="text"] {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: #000000; 
 }
 
 .submit {
-    border: solid #000000 2px;
     background-color: white;
+    padding: 12px;
     font-family: 'Fira Sans', sans-serif;
     color: #000000;
-    padding: 10px;
     font-size: 16px;
-    outline: none;
-
 }
