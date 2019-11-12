@@ -1,0 +1,35 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    padding: 25px;
+    border-bottom: solid #000000 5px;
+}
+
+form {
+    margin: 25px auto;
+    outline: none;
+}
+
+.input {
+    padding: 12px;
+    border: solid #000000 2px;
+    outline: none;
+
+
+}
+
+.submit {
+    border: solid #000000 2px;
+    background-color: white;
+    font-family: 'Fira Sans', sans-serif;
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+
+}
