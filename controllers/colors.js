@@ -13,17 +13,5 @@ module.exports = {
             .then(color => {
                 res.json(color)
             })
-    },
-    showCode: (req, res) => {
-        Color.findOne({ hex: req.params.code })
-            .then(color => {
-                res.json(color)
-            })
-    },
-    showId: (req, res) => {
-        Color.findOne({ _id: req.params.id })
-            .then(color => {
-                res.json(color)
-            })
-    },
+    }
 }

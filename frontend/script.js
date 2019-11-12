@@ -7,17 +7,13 @@ let url = 'http://localhost:8080/colors/'
 
 submit.addEventListener('submit', function (evt) {
     evt.preventDefault()
-    let hex = input.value
-    console.log(hex)
+    let hex = input.value.toLowerCase()
     fetch(url)
         .then(res => res.json())
         .then(res => {
-            console.log(res)
             let selectedColor = res.filter(color => {
-                // console.log(input.value)
-                return color.hex === input.value
+                return color.hex === hex
             })
-            console.log(selectedColor)
             body.style.backgroundColor = selectedColor[0].hex
             h1.innerHTML = selectedColor[0].name
         })
